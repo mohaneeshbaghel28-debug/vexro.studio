@@ -6,6 +6,7 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import Owner from "./components/Owner";
 import WhatWeBuild from "./components/WhatWeBuild";
 import Reviews from "./components/Reviews";
 import Pricing from "./components/Pricing";
@@ -25,6 +26,9 @@ export default function App() {
 
         {/* About Section */}
         <About />
+
+        {/* Agency Owner Section */}
+        <Owner />
 
         {/* What We Build Section */}
         <WhatWeBuild />

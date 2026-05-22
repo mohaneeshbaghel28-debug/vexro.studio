@@ -4,7 +4,7 @@
  */
 
 import { AGENCY_DETAILS } from "../data";
-import { Instagram, Mail, ArrowUp } from "lucide-react";
+import { Mail, Phone, ArrowUp } from "lucide-react";
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -42,13 +42,11 @@ export default function Footer() {
           </a>
 
           <a
-            href={AGENCY_DETAILS.instagram}
-            target="_blank"
-            rel="noopener noreferrer"
+            href={`tel:${AGENCY_DETAILS.phone}`}
             className="flex items-center gap-2 text-xs font-medium text-gray-400 hover:text-white transition-colors duration-200"
           >
-            <Instagram className="w-3.5 h-3.5 text-accent-blue" />
-            <span>Follow on Instagram</span>
+            <Phone className="w-3.5 h-3.5 text-accent-blue" />
+            <span>{AGENCY_DETAILS.phone}</span>
           </a>
         </div>
 

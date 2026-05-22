@@ -34,7 +34,8 @@ export const PROJECTS: Project[] = [
 
 export const AGENCY_DETAILS = {
   name: "Vexro Studio",
-  email: "vexrostudio@gmail.com",
+  email: "mohaneeshbaghel4@gmail.com",
+  phone: "+918817932825",
   instagram: "https://instagram.com/vexrostudio",
   tagline: "We Build Modern Websites For Businesses",
   subTagline: "Simple, clean, and professional websites designed for modern brands.",

@@ -5,7 +5,7 @@
 
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { Mail, CheckCircle, ArrowRight, Loader2, Building2, MessageSquare, User } from "lucide-react";
+import { Mail, Phone, CheckCircle, ArrowRight, Loader2, Building2, MessageSquare, User } from "lucide-react";
 import { AGENCY_DETAILS } from "../data";
 
 export default function InquiryForm() {
@@ -101,7 +101,7 @@ export default function InquiryForm() {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="mt-8 pt-8 border-t border-white/5 flex flex-col gap-4 text-sm"
+              className="mt-8 pt-8 border-t border-white/5 flex flex-col gap-5 text-sm"
             >
               <div className="flex items-center gap-3 text-gray-300">
                 <div className="p-2.5 rounded-full bg-white/5 text-accent-blue">
@@ -109,8 +109,20 @@ export default function InquiryForm() {
                 </div>
                 <div>
                   <span className="text-[10px] font-mono uppercase text-gray-500 block">Direct Inquiry</span>
-                  <a href={`mailto:${AGENCY_DETAILS.email}`} className="hover:text-white transition-colors duration-200">
+                  <a href={`mailto:${AGENCY_DETAILS.email}`} className="hover:text-white transition-colors duration-200 font-medium">
                     {AGENCY_DETAILS.email}
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-3 text-gray-300">
+                <div className="p-2.5 rounded-full bg-white/5 text-accent-blue">
+                  <Phone className="w-4 h-4" />
+                </div>
+                <div>
+                  <span className="text-[10px] font-mono uppercase text-gray-500 block">WhatsApp & Mobile</span>
+                  <a href={`tel:${AGENCY_DETAILS.phone}`} className="hover:text-white transition-colors duration-200 font-medium font-mono">
+                    {AGENCY_DETAILS.phone}
                   </a>
                 </div>
               </div>
