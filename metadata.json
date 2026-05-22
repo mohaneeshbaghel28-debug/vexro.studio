@@ -1,0 +1,6 @@
+{
+  "name": "Vexro Studio",
+  "description": "Simple, minimal, and premium portfolio website for Vexro Studio web development agency.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
